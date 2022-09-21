@@ -794,9 +794,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 		await hisoka.updateBlockStatus(users, 'block').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-        case 'Mobile Legends' : {
+        case 'MobileLegends': {
                 if (!isCreator) throw mess.owner
                 m.reply('Yahuuuuu!!')
+        }
+        break
+        case 'Ml': {
+                m.reply('yesss')
         }
         break
         case 'unblock': {
