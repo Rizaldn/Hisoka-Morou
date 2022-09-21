@@ -673,67 +673,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 }
             }
             break
-            case "cekorderan":
-            if (!isCreator)
-               throw m.reply(
-                 `Untuk menghindari abusing, command ini hanya bisa digunakan oleh owner.`
-               );
-             let usern = q.split("|")[0];
-             let ids = q.split("|")[1];
-             if (!text)
-               throw m.reply(
-                 `*Silahkan isi parameter dengan benar.*\n\nContoh:\ncekorderan username_akun|id_pesanan`
-               );
-             if (!ids)
-               throw m.reply(
-                 `*Masukkan username dan id pesanannya.*\n\nContoh:\ncekorderan username_akun|id_pesanan`
-               );
-             else {
-               m.reply("Sedang mengambil data orderan...");
-             }
-             axios
-               .get(
-                 `https://api.gtps.app/status.php?action=status&api_id=${api_id}&api_key=${api_key}&id=${ids}`,
-                 {
-                   headers: {
-                     "Content-Type": "application/json",
-                   },
-                 }
-               )
-               .then((e) => {
-                 let status = e.data?.data.status;
-                 let start = e.data?.data.start_count;
-                 let remains = e.data?.data.remains;
-                 kontext = `*Status Pesanan*
-
-            Order Status: *${status}*
-            Followers Start Count: ${start}
-            Remains: ${remains} followers          
-                 `;
-                 let btn = [
-                   {
-                     urlButton: {
-                       displayText: "Lihat Akun",
-                       url: `https://instagram.com/${usern}`,
-                     },
-                   },
-                   {
-                     quickReplyButton: {
-                       displayText: "Lihat Info Akun",
-                       id: `stalk ig ${usern}`,
-                     },
-                   },
-                 ];
-                 akbar.send5ButImg(
-                   m.chat,
-                   kontext,
-                   ultah,
-                   global.thumb,
-                   btn,
-                   global.thumb
-                 );
-               });
-            break;
+            
+               
+                 
+                
             case 'kuismath': case 'math': {
                 if (kuismath.hasOwnProperty(m.sender.split('@')[0])) throw "Masih Ada Sesi Yang Belum Diselesaikan!"
                 let { genMath, modes } = require('./src/math')
@@ -851,6 +794,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 		await hisoka.updateBlockStatus(users, 'block').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
+        case 'Mobile Legends' : {
+                if (!isCreator) throw mess.owner
+                m.reply('Yahuuuuu!!')
+        }
+        break
         case 'unblock': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
