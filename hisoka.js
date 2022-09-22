@@ -2640,7 +2640,37 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case "ml":
+            case "sumibotz":
+         {
+           anu = `*List Menu Sumi Store:*
+*_Ketik/Salin Perintah Dibawah Untuk Melihat Pricelist_*
+
+┌──⭓ *Group Menu*
+│
+│⭔ ML
+│⭔ FF
+│⭔ SL&TW
+│⭔ POSL
+│⭔ GIFT
+│⭔ MLVILOG
+│⭔ PYMT
+│
+└───────⭓
+
+*_KETIK 2X JIKA BOT TIDAK MERESPON^^_*`;
+           let btn = [
+           ];
+           hisoka.send5ButImg(
+             m.chat,
+             anu,
+             sumifooter,
+             global.thumb,
+             btn,
+             global.thumb
+           );
+         }
+         break;
+         case "ml":
          {
            anu = `*𖧷━━「Mobile Legends」━━𖧷*
 
