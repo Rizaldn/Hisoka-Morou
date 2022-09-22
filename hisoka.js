@@ -2640,7 +2640,7 @@ let capt = `⭔ Title: ${judul}
             hisoka.sendImage(m.chat, thumb, capt, m)
             }
             break
-            case "mobilelegends":
+            case "ml":
          {
            anu = `*𖧷━━「Mobile Legends」━━𖧷*
 
@@ -2672,7 +2672,7 @@ let capt = `⭔ Title: ${judul}
            );
          }
          break;
-         case "freefire":
+         case "ff":
          {
            anu = `*𖧷━━「Free Fire」━━𖧷*
 
@@ -2835,7 +2835,7 @@ _Contoh 120 x 899 = Rp 107.880_
            );
          }
          break;
-         case "payment":
+         case "pymt":
          {
            anu = `*𖧷━━「PAYMENT」━━𖧷*
 
