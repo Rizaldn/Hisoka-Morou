@@ -826,7 +826,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
            hisoka.send5ButImg(
              m.chat,
              anu,
-             const sumifooter = "Sumi Store © 2022";
+
+           hisoka.user.name,
              global.thumb,
              btn,
              global.thumb
