@@ -3000,7 +3000,7 @@ https://telegra.ph/file/2835076b6623102482f9a.png`;
                 }
             }
             break
-            case 'list': case 'menu': case 'help': case '?': {
+            case 'list': case 'menu': case 'help': case 'bot': {
                 anu = `┌──⭓ *Sumi Store*
 │
 │⭔ ${prefix}mobilelegends
