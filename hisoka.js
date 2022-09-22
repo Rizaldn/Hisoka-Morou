@@ -803,7 +803,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply('yesss')
         }
         break
-        case "hai":
+        case "Mobile Legends":
          {
            anu = `ML FAST VIA ID AND SERVER
 86 💎 Rp18.655
