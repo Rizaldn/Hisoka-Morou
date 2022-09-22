@@ -799,11 +799,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply('Yahuuuuu!!')
         }
         break
-        case 'Ml': {
+        case 'su': {
                 m.reply('yesss')
         }
         break
-        case "Mobile Legends":
+        case "ml":
          {
            anu = `ML FAST VIA ID AND SERVER
 86 💎 Rp18.655
